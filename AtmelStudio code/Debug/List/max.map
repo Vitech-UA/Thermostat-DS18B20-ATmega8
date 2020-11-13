@@ -1,0 +1,26 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+__ds18b20_scratch_pad                                                             0x0160       9
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+dtemper                                                                           0x0000       2
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+gisteresis                                                                        R4,R5        2
+temper                                                                            R6,R7        2
+
+FLASH Allocation [words]
+Function                                                          Address   Size
+--------------------------------------------------------------------------------
+write                                                             0x0004D     42
+print_val                                                         0x00077     26
+main                                                              0x00091     78
+ds18b20_select                                                    0x000DF     28
+ds18b20_read_spd                                                  0x000FB     33
+ds18b20_temperature                                               0x0011C     56
+ds18b20_init                                                      0x00154     59
